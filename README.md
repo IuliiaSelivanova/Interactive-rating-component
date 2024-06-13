@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/IuliiaSelivanova/Interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/IuliiaSelivanova/Interactive-rating-component/
+- Live Site URL: https://iuliiaselivanova.github.io/Interactive-rating-component/
 
 ### Built with
 
