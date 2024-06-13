@@ -110,12 +110,12 @@ img {
 .header {
   grid-area: title;
   color: var(--clr-white);
-  font-size: 1.6em;
+  font-size: clamp(1.6em, 3vw, 2em);
   font-weight: var(--fw-bold);
 }
 .message {
   grid-area: content;
-  font-size: 0.95em;
+  font-size: clamp(0.9em, 2vw, 1.3em);
 }
 .message-response {
   color: var(--clr-accent);
@@ -124,7 +124,9 @@ img {
   width: fit-content;
   border-radius: 25px;
   padding: 0.5em 1em;
+  font-size: clamp(0.9em, 2vw, 1.3em);
 }
+
 /* Style of buttons */
 .button-container {
   grid-area: raiting;
@@ -178,6 +180,7 @@ img {
   padding: 1.6em 1.6em;
   margin-inline: auto;
   max-width: 16.5rem;
+  aspect-ratio: 1;
   border-radius: 14px;
 }
 .grid-container--rating {
@@ -201,4 +204,14 @@ img {
     "raiting"
     "title"
     "content";
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    max-width: 22rem;
+    --gap: 1.5rem;
+  }
+  .rate-btn {
+    width: 2.7rem;
+  }
 }
