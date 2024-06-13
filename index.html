@@ -8,42 +8,53 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Overpass:regular,700" rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
-
   <!-- Rating state start -->
+  <section id="rating" class="grid-container grid-container--rating">
+    <div class="img-container">
+      <img src="images/icon-star.svg" alt="star-icon">
+    </div>
 
-  How did we do?
+    <h1 class="header">How did we do?</h1>
+    <p class="message">
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <div class="button-container flex" role="btnlist">
+      <button role="btn" class="rate-btn btn" data-rating="1" tabindex="0">1</button>
+      <button role="btn" class="rate-btn btn" data-rating="2" tabindex="-1">2</button>
+      <button role="btn" class="rate-btn btn" data-rating="3" tabindex="-1">3</button>
+      <button role="btn" class="rate-btn btn" data-rating="4" tabindex="-1">4</button>
+      <button  role="btn" class="rate-btn btn" data-rating="5" tabindex="-1">5</button>
+    </div>
 
-  1 2 3 4 5
-
-  Submit
+    <button role="submitBtn" class="submit-btn btn">Submit</button>
+  </section>
 
   <!-- Rating state end -->
+  <section id="response" class="grid-container grid-container--response">
+    <div class="img-container img-container--response">
+      <img src="images/illustration-thank-you.svg" alt="illustration thank you">
+    </div>
 
-  <!-- Thank you state start -->
+    <div class="message-response">You selected <span role="result-rating"></span> out of 5</div>
+    <h1 class="header">Thank you!</h1>
+    <p class="message">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  </section>
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+    Coded by <a href="https://github.com/IuliiaSelivanova">Iuliia Selivanova</a>.
+  </footer>
 </body>
 </html>
